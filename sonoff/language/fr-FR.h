@@ -28,7 +28,7 @@
  * Use online command StateText to translate ON, OFF, HOLD and TOGGLE.
  * Use online command Prefix to translate cmnd, stat and tele.
  *
- * Updated until v6.3.0.17
+ * Updated until v6.4.1.17
 \*********************************************************************/
 
 #define LANGUAGE_MODULE_NAME         // Enable to display "Module Generic" (ie Spanish), Disable to display "Generic Module" (ie English)
@@ -138,7 +138,7 @@
 #define D_RESTARTING "Redémarre"
 #define D_RESTART_REASON "Raison du redémarrage"
 #define D_RESTORE "restaurer"
-#define D_RETAINED "retenu"
+#define D_RETAINED "persistant"		// MQTT
 #define D_RULE "Règle"
 #define D_SAVE "Enregistrer"
 #define D_SENSOR "Capteur"
@@ -253,7 +253,7 @@
 
 #define D_MODULE_PARAMETERS "Paramètres module"
 #define D_MODULE_TYPE "Type de module"
-#define D_PULLUP_ENABLE "No Button/Switch pull-up"
+#define D_PULLUP_ENABLE "Inter. sans pull-up"
 #define D_GPIO "GPIO"
 #define D_SERIAL_IN "Entrée série"
 #define D_SERIAL_OUT "Sortie série"
@@ -288,8 +288,8 @@
 #define D_TELEMETRY_PERIOD "Période télémétrie"
 
 #define D_OTHER_PARAMETERS "Autres paramètres"
-#define D_TEMPLATE "Template"
-#define D_ACTIVATE "Activate"
+#define D_TEMPLATE "Modèle"
+#define D_ACTIVATE "Activer"
 #define D_WEB_ADMIN_PASSWORD "Mot de passe Web Admin"
 #define D_MQTT_ENABLE "MQTT activé"
 #define D_FRIENDLY_NAME "Surnom"
@@ -297,6 +297,14 @@
 #define D_HUE_BRIDGE "Hue Bridge"
 #define D_SINGLE_DEVICE "module unique"
 #define D_MULTI_DEVICE "multi module"
+
+#define D_CONFIGURE_TEMPLATE "Configure Template"
+#define D_TEMPLATE_PARAMETERS "Template parameters"
+#define D_TEMPLATE_NAME "Name"
+#define D_BASE_TYPE "Based on"
+#define D_TEMPLATE_FLAGS "Flags"
+#define D_ALLOW_ADC0 "ADC0 input"
+#define D_ALLOW_PULLUP "User pull-up selection"
 
 #define D_SAVE_CONFIGURATION "Enregistrer la configuration"
 #define D_CONFIGURATION_SAVED "Configuration enregistrée"
@@ -485,6 +493,7 @@
 
 // sonoff_template.h - keep them as short as possible to be able to fit them in GUI drop down box
 #define D_SENSOR_NONE          "Aucun"
+#define D_SENSOR_USER          "User"
 #define D_SENSOR_DHT11         "DHT11"
 #define D_SENSOR_AM2301        "AM2301"
 #define D_SENSOR_SI7021        "SI7021"
